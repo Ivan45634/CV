@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubhi Rani
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Ivan Listopadov}} & Email : \href{mailto:kramp87@mail.ru}{kramp87@mail.ru}\\
+   & Phone Number : +7-910-360-88-93 \\
+   & Telegram : @Ivan45687 \\
+  \href{https://github.com/Ivan45634}{GitHub: https://github.com/Ivan45634} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MSU, Faculty of Computational Mathematics and Cybernetics, MMF}{}
+      {Bachelor ~--- Applied mathematics and computer science}{September 2020 - June 2024}
+    \resumeSubheading
+      {HSE, Faculty of Computer Science}{}
+      {Master ~--- Math of Machine Learning}{September 2024 - June 2026}
+    \resumeSubheading
+      {Skoltech}{}
+      {Master ~--- Data Science}{September 2024 - June 2026}
+	    
+  \resumeSubHeadingListEnd
+
+
+\section{Course Certificates}
+  \resumeSubHeadingListStart
+     % \resumeSubheading{Летняя школа машинного обучения SMILES-2023}{}
+     % {Сколтех}{Август 2023}
+      \resumeSubheading{SQL for all}{}
+     {Stepik}{June 2024}
+     
+     \resumeSubheading{Foundations of machine learning on graphs}{}
+     {Skoltech}{November 2023}
+     
+     \resumeSubheading{Introduction to Computer Vision}{}
+     {Skoltech}{September 2023}
+     
+     \resumeSubheading{Modern neural networks for natural language processing tasks}{}
+     {Skoltech}{August 2023}
+     
+     \resumeSubheading{Artificial Intelligence and data analysis}{}
+     {Summer School, RAAI}{July 2023}
+     
+     \resumeSubheading{Deep Python}{}
+     {VK Education}{March 2023 - May 2023}
+
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Programming}{Python, C, C\texttt{++}, SQL, Bash}
+	\resumeSubItem{Frameworks}{NumPy, Sklearn, Pandas, Matplotlib, OpenCV, XGBoost, LightGBM, Catboost, PyTorch, Flask}
+    \resumeSubItem{Сourses}{Linear algebra, theory of probability, mathematical statistics, optimization methods, classical ml, deep learning}
+    \resumeSubItem{Tools}{Git, Docker, \LaTeX}
+    \resumeSubItem{Languages}{English (Upper-Intermediate B2), Russian (Native)}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Web server "Ensembles for solving the regression problem"}{\href{https://github.com/Ivan45634/Task03}{ https://github.com/Ivan45634/Task03}}
+            Purpose of this project is to simplify the work with ensembles of algorithms for a person who has no programming skills, but who has data on which he wants to train Random Forest or Gradient Boosting.
+
+     \resumeSubheading
+     {Intelligent search system for people tracking}{\href{https://github.com/Ivan45634/RAAI_project-2023}{ https://github.com/Ivan45634/RAAI-2023}}
+            The project is a system to detect and track people in different scenarios with high precision. The project allows to build an application that uses a computer vision model trained to recognize people in thermal imaging mode.
+
+
+    \resumeSubheading
+    {Energy-based method for learning entropic optimal transport}{\href{https://github.com/Ivan45634/EBM-OT}{https://github.com/Ivan45634/EBM-OT}}
+        Implementation of training energy-based model algorithm for learning entropic optimal transport. 
+        Trained feed-forward neiral network to construct optimal transport plans between two distributions with experiments on different regularization parameter value.
+
+    \resumeSubheading
+    {Dual ensembles}{\href{https://github.com/Ivan45634/Dual-Ensembles}{https://github.com/Ivan45634/Dual-Ensembles}}
+            Framework for learning ensembles over logical classifiers to approximate continous target.
+    
+\resumeSubHeadingListEnd
+
+\section{Hackathons}
+\resumeSubHeadingListStart
+\resumeSubItem{Summer School, RAAI}{«Intelligent search system for detecting people» - 3rd place.}\\
+\resumeSubItem{SMILES-2023, Skoltech}{«Neural Optimal Transport in latent space» - participation.}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
